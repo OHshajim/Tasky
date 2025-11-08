@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/tasky-logo.png" alt="Tasky Logo" width="150" />
+  <img src="/logo.png" alt="Tasky Logo" width="150" />
   <h1>Tasky — Smart Task Manager</h1>
   <p>A simple, elegant task management app built with <strong>React</strong>, <strong>TypeScript</strong>, and <strong>Tailwind CSS</strong>. Organize your tasks efficiently with local storage — no backend required.</p>
 
