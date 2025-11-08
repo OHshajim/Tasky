@@ -4,24 +4,24 @@ import { TaskCard } from "./TaskCard";
 import { Task } from "@/types/task";
 
 const TaskList = ({ filteredTasks, filter, setIsFormOpen, setEditingTask, setDeletingTaskId, setTasks }) => {
-      const handleToggleComplete = (id: string) => {
-          setTasks((prev) =>
-              prev.map((task) =>
-                  task.id === id
-                      ? {
-                            ...task,
-                            completed: !task.completed,
-                            updatedAt: new Date().toISOString(),
-                        }
-                      : task
-              )
-          );
-      };
+    const handleToggleComplete = (id: string) => {
+        setTasks((prev) =>
+            prev.map((task) =>
+                task.id === id
+                    ? {
+                          ...task,
+                          completed: !task.completed,
+                          updatedAt: new Date().toISOString(),
+                      }
+                    : task
+            )
+        );
+    };
 
-      const handleEdit = (task: Task) => {
-          setEditingTask(task);
-          setIsFormOpen(true);
-      };
+    const handleEdit = (task: Task) => {
+        setEditingTask(task);
+        setIsFormOpen(true);
+    };
     return (
         <div className="space-y-3">
             {filteredTasks.length === 0 ? (
