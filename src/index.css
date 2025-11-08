@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Task Management App Design System */
+    /* Base Colors - Light Gray Background */
+    --background: 0 0% 95.7%;
+    --foreground: 210 52% 11%;
+    
+    /* Card Surfaces */
+    --card: 0 0% 100%;
+    --card-foreground: 210 52% 11%;
+    
+    /* Popover */
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 52% 11%;
+    
+    /* Primary - Deep Navy Blue (#0C2B4E) */
+    --primary: 210 65% 17%;
+    --primary-foreground: 0 0% 100%;
+    
+    /* Secondary - Mid Blue (#1A3D64) */
+    --secondary: 210 59% 25%;
+    --secondary-foreground: 0 0% 100%;
+    
+    /* Accent - Teal Blue (#1D546C) */
+    --accent: 194 57% 27%;
+    --accent-foreground: 0 0% 100%;
+    
+    /* Muted Surfaces */
+    --muted: 210 20% 92%;
+    --muted-foreground: 210 20% 45%;
+    
+    /* Success State */
+    --success: 152 69% 31%;
+    --success-foreground: 0 0% 100%;
+    
+    /* Destructive */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    
+    /* Borders & Inputs */
+    --border: 210 20% 88%;
+    --input: 210 20% 88%;
+    --ring: 210 65% 17%;
+    
+    /* Border Radius */
+    --radius: 0.75rem;
+    
+    /* Transitions */
+    --transition-smooth: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dark {
+    --background: 210 65% 17%;
+    --foreground: 0 0% 95.7%;
+    
+    --card: 210 59% 20%;
+    --card-foreground: 0 0% 95.7%;
+    
+    --popover: 210 59% 20%;
+    --popover-foreground: 0 0% 95.7%;
+    
+    --primary: 0 0% 95.7%;
+    --primary-foreground: 210 65% 17%;
+    
+    --secondary: 210 59% 25%;
+    --secondary-foreground: 0 0% 95.7%;
+    
+    --accent: 194 57% 27%;
+    --accent-foreground: 0 0% 95.7%;
+    
+    --muted: 210 40% 22%;
+    --muted-foreground: 210 20% 70%;
+    
+    --success: 152 69% 31%;
+    --success-foreground: 0 0% 100%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --border: 210 40% 25%;
+    --input: 210 40% 25%;
+    --ring: 0 0% 95.7%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
